@@ -59,6 +59,7 @@ La lista de tecnologias usada con el proyecto:
 [Descargar Scripts](/doc/Scripts_Create_Database.sql)
 - Tener en cuenta que se usa [mockapi](https://mockapi.io/), [URL endpoint](https://658310b502f747c8367afe14.mockapi.io/api/discountProductById/discount) para generar consumo externo.
 - En la raiz del proyecto `Test.Backend.API` se deja carpeta llamada LOGs para guardar las transacciones del endpoint.
-![image](/doc/image/logs.png)
+
+- ![image](/doc/image/logs.png)
 
 - Compilar y ejecutar proyecto.
