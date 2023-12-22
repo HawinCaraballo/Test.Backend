@@ -3,49 +3,58 @@
 ## Tabla de contenido
 1. [Informacion General](#informacion-general)
 2. [Tecnologias](#tecnologias)
-3. [Installation](#installation)
+3. [Configuracion](#configuracion)
 
 ### Informacion General
 
 ***
-Write down the general informations of your project. It is worth to always put a project status in the Readme file. This is where you can add it. 
+Proyecto creado NET 8 NET CORE con arquitectura `Clean Architecture` y patrones CQRS y MEDIATOR.
+
 ### Screenshot
+Se visualiza imagenes del proyecto N-capas aplicando la arquitectura:
+
 ![Image text](/doc/image/arquitecturaProyecto.png)
 ## Tecnologias
 ***
 La lista de tecnologias usada con el proyecto:
-* [C# Net](https://example.com): Version 8 
-* [Lazy Cache](https://example.com): Version 2.34
-* [Library name](https://example.com): Version 1234
-## Installation
+* [C# Net](https://dotnet.microsoft.com/es-es/download/dotnet/8.0) Version 8 
+* Base de datos SQL Server 2019 (Microsoft SQL Server 2019 15.0.2104.1)
+
+### Test.Backend.Api
+* [Serilog](https://www.nuget.org/packages/Serilog/3.1.2-dev-02097) Version 3.1.1
+* [Serilog.AspNetCore](https://www.nuget.org/packages/Serilog.AspNetCore) Version 8
+* [Serilog.Sinks.Console](https://www.nuget.org/packages/Serilog.Sinks.Console) Version 5.0.1
+* [Serilog.Sinks.File](https://www.nuget.org/packages/Serilog.Sinks.File/5.0.1-dev-00968) Version 5.0.1
+
+### Test.Backend.Application
+* [AutoMapper](https://www.nuget.org/packages/AutoMapper) Version 12.0.1
+* [AutoMapper.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/AutoMapper.Extensions.Microsoft.DependencyInjection) Version 12.0.1
+* [FluentValidation](https://www.nuget.org/packages/FluentValidation) Version 11.8.1
+* [FluentValidation.DependencyInjectionExtensions](https://www.nuget.org/packages/FluentValidation.DependencyInjectionExtensions) Version 11.8.1
+* [LazyCache](https://www.nuget.org/packages/LazyCache) Version 2.4.0
+* [LazyCache.AspNetCore](https://www.nuget.org/packages/LazyCache.AspNetCore) Version 2.4.0
+* [MediatR.Extensions.Microsoft.DependencyInjection](https://www.nuget.org/packages/MediatR.Extensions.Microsoft.DependencyInjection) Version 11.0.0
+* [Microsoft.Extensions.Logging.Abstractions](https://www.nuget.org/packages/Microsoft.Extensions.Logging.Abstractions) Version 8
+* [Newtonsoft.Json](https://www.nuget.org/packages/Newtonsoft.Json) Version 13.0.3
+
+### Test.Backend.Infraestructure
+* [Microsoft.EntityFrameworkCore.Design](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Design) Version 8
+* [Microsoft.EntityFrameworkCore.SqlServer ](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.SqlServer) Version 8
+* [Microsoft.EntityFrameworkCore.Tools ](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.Tools) Version 8
+
+### Test.Backend.UnitTest
+* [AutoFixture](https://www.nuget.org/packages/AutoFixture/4.18.1) Version 4.18.1
+* [Microsoft.EntityFrameworkCore](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore) Version 8
+* [Microsoft.EntityFrameworkCore.InMemory](https://www.nuget.org/packages/Microsoft.EntityFrameworkCore.InMemory) Version 8
+* [Microsoft.NET.Test.Sdk](https://www.nuget.org/packages/Microsoft.NET.Test.Sdk/17.8.0) Version 17.8.0
+* [Moq](https://www.nuget.org/packages/Moq) Version 4.20.70
+* [Shouldly](https://www.nuget.org/packages/Shouldly) Version 4.2.1
+* [Xunit](https://www.nuget.org/packages/xunit) Version 2.6.3
+* [Xunit.runner.visualstudio](https://www.nuget.org/packages/xunit.runner.visualstudio) Version 2.5.5
+
+
+## Configuracion
 ***
-A little intro about the installation. 
-```
-$ git clone https://example.com
-$ cd ../path/to/the/file
-$ npm install
-$ npm start
-```
-Side information: To use the application in a special environment use ```lorem ipsum``` to start
-## Collaboration
-***
-Give instructions on how to collaborate with your project.
-> Maybe you want to write a quote in this part. 
-> It should go over several rows?
-> This is how you do it.
-## FAQs
-***
-A list of frequently asked questions
-1. **This is a question in bold**
-Answer of the first question with _italic words_. 
-2. __Second question in bold__ 
-To answer this question we use an unordered list:
-* First point
-* Second Point
-* Third point
-3. **Third question in bold**
-Answer of the third question with *italic words*.
-4. **Fourth question in bold**
-| Headline 1 in the tablehead | Headline 2 in the tablehead | Headline 3 in the tablehead |
-|:--------------|:-------------:|--------------:|
-| text-align left | text-align center | text-align right |
+Ejecutar script en el motor de base de datos.
+[Descargar Scripts](/doc/Scripts_Create_Database.sql)
+
